@@ -57,8 +57,8 @@ public class GameManager : MonoBehaviour
         enemyLayerMask = LayerMask.GetMask("Enemy");
         instance = this;
         gameState.Initialize();
-        gameStateInitialized.Raise();
-        fadingPanel.FadeOut();
+        
+        fadingPanel.FadeOut(gameStateInitialized.Raise);
         if(PlayerPrefs.GetInt("InfoDisplayed") < 1)
         {
             firstInfoPanel.SetActive(true);

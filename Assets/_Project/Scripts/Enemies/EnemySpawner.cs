@@ -56,8 +56,6 @@ public class EnemySpawner : MonoBehaviour
     {
         if (!spawnEnabled) return;
         spawnTime -= Time.deltaTime;
-        Debug.Log(currentWaveWeight);
-        Debug.Log(effectiveWaveLength);
         if(spawnTime <= 0 && currentWaveWeight < effectiveWaveLength)
         {
             //Gets random enemy from available pools and adds its weight to the wave weight
