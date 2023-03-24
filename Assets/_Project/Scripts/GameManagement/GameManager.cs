@@ -5,14 +5,38 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    /// <summary>
+    /// Hash to the Layermask of the Enemy layer
+    /// </summary>
     public static int enemyLayerMask;
 
+    /// <summary>
+    /// Scriptable that defines how effective elements are over advantageous and disadvantageous elements
+    /// </summary>
     [SerializeField] TowerEnemyInteraction interactionDesign;
+    /// <summary>
+    /// Game State holds the information of the most important variables in the game.
+    /// </summary>
     [SerializeField] GameState gameState;
+    /// <summary>
+    /// Monobehaviour with the menu to build towers
+    /// </summary>
     [SerializeField] ConstructMenu constructMenu;
+    /// <summary>
+    /// Monobehaviour with the menu to upgrade towers and enchant them
+    /// </summary>
     [SerializeField] UpgradeMenu upgradeMenu;
+    /// <summary>
+    /// Does a fade in and fade out effect to the scene
+    /// </summary>
     [SerializeField] FadingPanel fadingPanel;
+    /// <summary>
+    /// Panel that displays information to players new to the game
+    /// </summary>
     [SerializeField] GameObject firstInfoPanel;
+    /// <summary>
+    /// Leaderboards monobehaviour
+    /// </summary>
     [SerializeField] Leaderboards leaderboards;
 
     [Header("Game Events")]

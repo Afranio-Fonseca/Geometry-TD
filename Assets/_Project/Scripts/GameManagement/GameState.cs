@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GameState : ScriptableObject
 {
+    /// <summary>
+    /// Starting parameters for the game state when the game begins.
+    /// </summary>
     [SerializeField] StartingParameteres startingParameteres;
 
     private int currency;
