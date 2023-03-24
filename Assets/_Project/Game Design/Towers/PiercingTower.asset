@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3c330a81475c644a8eb40269911790, type: 3}
+  m_Name: PiercingTower
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2747690628134850419, guid: a9716c16a44a94eed9b5c90fbf4d9bdd, type: 3}
+  baseCost: 15
+  baseUpgradeCost: 7
+  range: 50
+  firingRate: 1
+  baseDamage: 25
+  damagePerUpgrade: 15
+  projectileSpeed: 6
+  projectile: {fileID: 1540991541842569015, guid: 3fdf97267fd6ca949a7da3274e8cdcf8, type: 3}
+  areaEffect: 0
+  ignoreArmor: 1
